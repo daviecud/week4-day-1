@@ -12,3 +12,7 @@ end
 get '/rock/scissors' do
   "Rock Wins"
 end
+
+get '/rock/scissors' do
+  
+end
