@@ -10,9 +10,15 @@ get '/hi' do
 end
 
 get '/rock/scissors' do
-  "Rock Wins"
+  game = Game.new("rocks", "scissors")
+  @game_result = game.winner()
+  erb (:result)
 end
 
-get '/rock/scissors' do
-  
+get '/' do
+  erb (:home)
+end
+
+get '/about' do
+  erb (:about)
 end
